@@ -10,8 +10,14 @@ import logo from '../images/flow2grow_small.png';
 
 class AppBarMenu extends Component {
     render() {
-        const pages = ['Home', 'About', 'Personal', 'Business', 'Contact'];
-
+        const pages = [
+            { title: 'Home', number: 0 },
+            { title: 'About', number: 1 }, 
+            { title: 'Personal', number: 2 }, 
+            { title: 'Business', number: 3 },
+            { title: 'Contact', number: 4 }
+        ];
+        const { changePage } = this.props;
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar color='info' position='static' style={{width: '100%'}}>
@@ -20,11 +26,11 @@ class AppBarMenu extends Component {
                         <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' />
                         {pages.map((page) => (
                             <Button
-                                key={page}
-                                // onClick={handleCloseNavMenu}
+                                key={page.number}
+                                onClick={() => changePage(page.number)}
                                 sx={{ my: 2, color: '#007136', display: 'block'}}
                             >
-                                {page}
+                                {page.title}
                             </Button>
                         ))}
                     </Box>
