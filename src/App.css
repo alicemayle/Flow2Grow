@@ -53,12 +53,6 @@ p {
 	color: #37474f;
 	font-weight: 500;
 }
-/* #root {
-	height: inherit;
-	background: url('../public/img/bg-galileo.jpg');
-	background-position: center center;
-	background-size: cover;
-} */
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
 	-webkit-appearance: none;
@@ -69,12 +63,12 @@ input[type='number']::-webkit-outer-spin-button {
 	height: 0.5rem;
 }
 *::-webkit-scrollbar-thumb {
-	background: -webkit-gradient(linear, left top, left bottom, from(#233a79), to(#081a4b));
-	background: linear-gradient(to bottom, #233a79, #081a4b);
+	background: -webkit-gradient(linear, left top, left bottom, from(#568721), to(#007136));
+	background: linear-gradient(to bottom, #568721, #007136);
 	border-radius: 25px;
 }
 *::-webkit-scrollbar-track {
-	background: linear-gradient(to right, #dbe7f1, #dbe7f1 0.0625rem, #dbe7f1 0.0625rem, #dbe7f1);
+	background: linear-gradient(to right, #F7FFFC, #F7FFFC 0.0625rem, #F7FFFC 0.0625rem, #F7FFFC);
 }
 .nowrap {
 	flex-wrap: nowrap;
@@ -350,11 +344,31 @@ input[type='number']::-webkit-outer-spin-button {
 	color: #fff;
 	align-content: space-between;
 }
-.boxIconsFooter {
+.box-icons-footer {
 	display: flexbox;
 	flex-grow: 1;
 }
-
+.home-page {
+	height: inherit;
+	background: url('./images/jeremy-bishop-tree-home.jpeg');
+	background-position: center center;
+	background-size: cover;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+.home-page-title {
+	position: relative;
+	margin: 383px 0px 10px calc((100% - 980px) * 0.5);
+	grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    justify-self: start;
+    align-self: start;
+	left: 237px;
+}
 @media (min-width: 576px) {
 	.wrapper {
 		max-width: 684px;
