@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import BoxAboutUs from './BoxAboutAs';
+import BoxServices from './BoxServices';
+import ContactUs from '../Contact/ContactUs';
 
 class Home extends Component {
     render() {
@@ -10,7 +12,9 @@ class Home extends Component {
                     Flow2Grow
                 </span>
             </div>
-            <BoxAboutUs />
+            <BoxAboutUs { ...this.props } />
+            <BoxServices { ...this.props }/>
+            <ContactUs margin='70px'/>
         </div>
     );
     }
