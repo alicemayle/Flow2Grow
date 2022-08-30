@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Translation, withTranslation } from 'react-i18next';
 import AppBarMenu from './components/AppBarMenu';
 import Footer from './components/Footer';
 import Home from './containers/Home/Home';
@@ -19,16 +20,39 @@ class App extends Component {
 
     return (
       <div className='init'>
-        <AppBarMenu { ...this.props } changePage={ this.changePage }/>
-        { pageSelect === 0 && <Home { ...this.props } changePage={ this.changePage }/> }
-        { pageSelect === 1 && <AboutUs { ...this.props } changePage={ this.changePage }/> }
-        { pageSelect === 2 && <Personal { ...this.props } changePage={ this.changePage }/> }
-        { pageSelect === 3 && <Business { ...this.props } changePage={ this.changePage }/> }
-        { pageSelect === 4 && <ContactUs { ...this.props }/> }
+        <Translation>
+          { t => <AppBarMenu { ...this.props } changePage={ this.changePage } t={t}/> }
+        </Translation>
+        { pageSelect === 0 && 
+          <Translation>
+            { t => <Home { ...this.props } changePage={ this.changePage } t={t}/> }
+          </Translation>
+        }
+        { pageSelect === 1 && 
+          <Translation>
+            { t => <AboutUs { ...this.props } changePage={ this.changePage } t={t}/> }
+          </Translation> 
+        }
+        { pageSelect === 2 && 
+          <Translation>
+            { t => <Personal { ...this.props } changePage={ this.changePage } t={t}/> }
+          </Translation>
+        }
+        { pageSelect === 3 && 
+          <Translation>
+            { t => <Business { ...this.props } changePage={ this.changePage } t={t}/> }
+          </Translation>
+        }
+        { pageSelect === 4 && 
+          <Translation>
+            { t => <ContactUs { ...this.props } t={t}/> }
+          </Translation>
+          
+        }
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default withTranslation()(App);

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './App.css';
 import App from './App';
+import i18n from "./constants/LangConfig";
 
 const theme = createTheme({
   typography: {
