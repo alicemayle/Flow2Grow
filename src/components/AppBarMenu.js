@@ -21,8 +21,8 @@ class AppBarMenu extends Component {
         ];
         const { changePage, t } = this.props;
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar color='info' position='static' style={{width: '100%'}}>
+        <Box sx={{ display: 'flex' }}>
+            <AppBar color='info' style={{width: '100%'}} >
                 <Toolbar>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' />

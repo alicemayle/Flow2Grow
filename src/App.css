@@ -356,6 +356,7 @@ input[type='number']::-webkit-outer-spin-button {
 	display: flex;
 	align-items: center;
 	align-content: center;
+	padding-top: 70px;
 }
 .home-page-title {
 	position: relative;
@@ -430,6 +431,7 @@ input[type='number']::-webkit-outer-spin-button {
 	display: flex;
 	align-items: center;
 	align-content: center;
+	padding-top: 70px;
 }
 .services-page-title {
 	line-height: 1.35em;

@@ -5,7 +5,7 @@ class ContactUs extends Component {
     render() {
         const { margin, t } = this.props;
     return (
-        <div className='home-page-box' style={{padding: 0}}>
+        <div className='home-page-box' style={{padding: 0, paddingTop: '70px'}}>
             <Box
                 sx={{
                     width: '100%',
