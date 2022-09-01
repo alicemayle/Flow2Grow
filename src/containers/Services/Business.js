@@ -6,44 +6,44 @@ import enterprise from '../../images/business-page-box-info-enterprise-support.j
 
 class Business extends Component {
     render() {
-        const { changePage } = this.props;
+        const { changePage, t } = this.props;
     return (
         <div className='services-page'>
             <div className='services-page-title'>
                 <span style={{fontSize: '48px', fontWeight: 'bold', color: '#007136'}}>
-                    BUSINESS
+                    {t("BusinessTitle")}
                 </span><br></br><br></br>
-                <span>Services for companies and organisations.<br></br></span>
+                <span>{t("BusinessSubtitle")}<br></br></span>
             </div>
             <BoxServiceInfo { ...this.props } 
                 image={investments}
-                textTitle={"INVESTMENTS & FINANCE"}
-                textContent={"Flow2Grow are leading experts in the field of business finance and investment, drawing upon over 15 years of experience. Some of our specialties include:"}
+                textTitle={t("BusinessBoxInfoTitleInvestments")}
+                textContent={t("BusinessBoxInfoContentInvestments")}
             >
                 <ul style={{textAlign: 'justify'}}>
-                    <li>Financial models, planning and structuring</li>
-                    <li>Investment, banking and financing solutions</li>
-                    <li>Private equity</li>
-                    <li>Tax efficiency</li>
-                    <li>Employee pensions and benefits</li>
+                    <li>{t("BusinessBoxInfoContentInvestmentsItem1")}</li>
+                    <li>{t("BusinessBoxInfoContentInvestmentsItem2")}</li>
+                    <li>{t("BusinessBoxInfoContentInvestmentsItem3")}</li>
+                    <li>{t("BusinessBoxInfoContentInvestmentsItem4")}</li>
+                    <li>{t("BusinessBoxInfoContentInvestmentsItem5")}</li>
                 </ul>
             </BoxServiceInfo>
             <BoxServiceInfo { ...this.props } 
                 image={enterprise}
-                textTitle={"BUSINESS & ENTERPRISE SUPPORT"}
-                textContent={"The team at Flow2Grow are all passionate about business and enterprise, meaning our clients receive the highest quality of service, from people that really care. Some of the ways on which we help clients with their businesses are:"}
+                textTitle={t("BusinessBoxInfoTitleEnterprise")}
+                textContent={t("BusinessBoxInfoContentEnterprise")}
             >
                 <ul style={{textAlign: 'justify'}}>
-                    <li>Start-up advice & business planning</li>
-                    <li>Feasibility studies</li>
-                    <li>Project management</li>
-                    <li>Corporate strategy</li>
-                    <li>Business consultancy services</li>
+                    <li>{t("BusinessBoxInfoContentEnterpriseItem1")}</li>
+                    <li>{t("BusinessBoxInfoContentEnterpriseItem2")}</li>
+                    <li>{t("BusinessBoxInfoContentEnterpriseItem3")}</li>
+                    <li>{t("BusinessBoxInfoContentEnterpriseItem4")}</li>
+                    <li>{t("BusinessBoxInfoContentEnterpriseItem5")}</li>
                 </ul>
             </BoxServiceInfo>
             <Button variant="contained" style={{marginBottom: '30px'}}
                 onClick={() => changePage(4)}>
-                Contact Us
+                {t("ButtonContactUs")}
             </Button>
         </div>
     );

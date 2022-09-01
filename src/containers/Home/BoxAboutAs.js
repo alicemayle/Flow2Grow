@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class BoxAboutUs extends Component {
     render() {
-        const { changePage } = this.props;
+        const { changePage, t } = this.props;
     return (
         <div className='home-page-box'>
             <Box
@@ -24,14 +24,14 @@ class BoxAboutUs extends Component {
                     lineHeight: '1.65em',
                     fontFamily: 'Raleway, sans-serif'
                     }}>
-                    <span style={{fontSize: '40px'}}>ABOUT US<br></br><br></br></span>
-                    <span>Here to help you grow.<br></br><br></br></span>
-                    <span>Our company helps individuals, families and businesses achieve their financial goals.<br></br><br></br></span>
-                    <span>We guide our clients to success through our highly professional and personalised consultancy and management service. We pride ourselves on providing only the best quality and honest advice we can.<br></br>
+                    <span style={{fontSize: '40px'}}>{t("HomeBoxAboutUsTitle")}<br></br><br></br></span>
+                    <span>{t("HomeBoxAboutUsContent1")}<br></br><br></br></span>
+                    <span>{t("HomeBoxAboutUsContent2")}<br></br><br></br></span>
+                    <span>{t("HomeBoxAboutUsContent3")}<br></br>
                     </span>
                     <Button variant="contained" color='info' style={{marginTop: '30px'}}
                         onClick={() => changePage(1)}>
-                        Learn more
+                        {t("ButtonLearnMore")}
                     </Button>
                 </Box>
                 <div className='home-page-box-about-us-image'></div>
