@@ -1,4 +1,4 @@
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import React, { Component } from 'react';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -6,6 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 class Footer extends Component {
     render() {
+        const { changePage, t } = this.props;
     return (
         <div className='footer'>
             <div className='box-icons-footer' style={{textAlign: 'left'}}>
@@ -13,9 +14,10 @@ class Footer extends Component {
                     ©2020 by Flow2Grow.
                 </span>
             </div>
-            <div className='box-icons-footer'  style={{textAlign: 'center', flexDirection: 'column' }}>
-                <span>Privacy Policy<br></br></span>
-                <span>Terms & Conditions</span>
+            <div className='box-icons-footer'  style={{textAlign: 'center'}}>
+                <Button variant="text" color='info' onClick={() => changePage(5)}>
+                    {t("PrivacyPolicy")}
+                </Button>
             </div>
             <div className='box-icons-footer'  style={{textAlign: 'right'}}>
                 <IconButton color="info" aria-label="contact phone">

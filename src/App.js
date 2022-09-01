@@ -7,6 +7,7 @@ import ContactUs from './containers/Contact/ContactUs';
 import Personal from './containers/Services/Personal';
 import Business from './containers/Services/Business';
 import AboutUs from './containers/AboutUs/AboutUs';
+import PrivacyPolicy from './containers/PrivacyPolicy/PrivacyPolicy';
 
 class App extends Component {
   state = {
@@ -47,9 +48,15 @@ class App extends Component {
           <Translation>
             { t => <ContactUs { ...this.props } t={t}/> }
           </Translation>
-          
         }
-        <Footer />
+        { pageSelect === 5 && 
+          <Translation>
+            { t => <PrivacyPolicy { ...this.props } t={t}/> }
+          </Translation>
+        }
+        <Translation>
+            { t => <Footer t={t} changePage={ this.changePage }/> }
+          </Translation>
       </div>
     );
   }
