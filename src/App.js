@@ -51,7 +51,7 @@ class App extends Component {
         }
         { pageSelect === 5 && 
           <Translation>
-            { t => <PrivacyPolicy { ...this.props } t={t}/> }
+            { t => <PrivacyPolicy { ...this.props } changePage={ this.changePage } t={t}/> }
           </Translation>
         }
         <Translation>

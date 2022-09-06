@@ -27,7 +27,7 @@ class BoxServiceInfo extends Component {
                     lineHeight: '1.65em',
                     fontFamily: 'Raleway, sans-serif',
                     }}>
-                    <span style={{fontSize: '22px', color: '#007136', textAlign: 'center'}}>{textTitle}<br></br><br></br></span>
+                    <span style={{fontSize: '22px', color: '#007136'}}>{textTitle}<br></br><br></br></span>
                     <span>{textContent}</span>
                     {children}
                 </Box>

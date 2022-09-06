@@ -6,34 +6,32 @@ import ForwardIcon from '@mui/icons-material/Forward';
 
 class AboutUs extends Component {
     render() {
-        const { changePage } = this.props;
+        const { changePage, t } = this.props;
     return (
         <div className='services-page' style={{padding: '150px'}}>
             <BoxServiceInfo { ...this.props } 
                 image={imageBox}
-                textTitle={"MORE ABOUT US"}
-                textContent={"Let's grow!"}
+                textTitle={t("AboutUsTitle")}
+                textContent={t("AboutUsContent")}
                 heightBox='inherit'
             >
                 <span >
                 <br></br><br></br>
-                <span style={{textAlign: 'start'}}>
-                    Flow2Grow is a financial and business consultancy firm, benefiting from over 15 years of experience. We have a diverse range of services that we provide to clients, some of our specialties include:
-                </span>
+                <span style={{textAlign: 'start'}}>{t("AboutUsContentInfo1")}</span>
                     <ul style={{textAlign: 'justify'}}>
-                        <li>Investments and Savings</li>
-                        <li>Asset Management</li>
-                        <li>Retirement and Estate Planning</li>
-                        <li>Business planning, strategy and guidance</li>
+                        <li>{t("AboutUsContentInfoItem1")}</li>
+                        <li>{t("AboutUsContentInfoItem2")}</li>
+                        <li>{t("AboutUsContentInfoItem3")}</li>
+                        <li>{t("AboutUsContentInfoItem4")}</li>
                     </ul>
-                <br></br>Our business philosophy is simple… to provide the highest possible level of service to our clients. We achieve this by creating and nurturing positive relationships. We are able to do this, as we have a passion for what we do, the rest comes naturally.
-                <br></br><br></br>Flow2Grow as a company strive to:
+                <br></br>{t("AboutUsContentInfo2")}
+                <br></br><br></br>{t("AboutUsContentInfo3")}
                 <ul style={{textAlign: 'justify'}}>
-                        <li>Show respect for everyone that surrounds us</li>
-                        <li>Minimise any negative impact on our environment and maximise the positive</li>
-                        <li>Create opportunities where we see them</li>
-                        <li>Constantly learn, innovate and improve where we can</li>
-                        <li>Remain humble and open minded at all times</li>
+                        <li>{t("AboutUsContentInfoItem5")}</li>
+                        <li>{t("AboutUsContentInfoItem6")}</li>
+                        <li>{t("AboutUsContentInfoItem7")}</li>
+                        <li>{t("AboutUsContentInfoItem8")}</li>
+                        <li>{t("AboutUsContentInfoItem9")}</li>
                     </ul>
                 </span>
                 
