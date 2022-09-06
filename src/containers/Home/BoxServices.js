@@ -5,11 +5,11 @@ import businessImage from '../../images/home-box-services-business.jpg';
 
 class BoxServices extends Component {
     render() {
-        const { changePage } = this.props;
+        const { changePage, t } = this.props;
     return (
         <div className='home-page-box'>
             <span style={{fontSize: '40px', fontFamily: 'Raleway, sans-serif', color:'#007136', fontWeight: 'bold', marginBottom: '70px'}}>
-                SERVICES
+                {t("HomeBoxServicesTitle")}
             </span>
             <div className='home-page-box-service'>
                 <Box sx={{
@@ -27,11 +27,11 @@ class BoxServices extends Component {
                     borderRadius: '1.5em'
                     }}>
                     <img className='home-page-box-service-image' src={personalImage} alt="PersonalImage"/>
-                    <span style={{fontSize: '24px', fontWeight: 'bold'}}>PERSONAL<br></br><br></br></span>
-                    <span>Individuals and Families<br></br><br></br></span>
+                    <span style={{fontSize: '24px', fontWeight: 'bold'}}>{t("HomeBoxServicesTitlePersonal")}<br></br><br></br></span>
+                    <span>{t("HomeBoxServicesContentPersonal")}<br></br><br></br></span>
                     <Button variant="contained" color='info' style={{marginTop: '30px'}}
                         onClick={() => changePage(2)}>
-                        Learn more
+                        {t("ButtonLearnMore")}
                     </Button>
                 </Box>
                 <Box sx={{
@@ -49,11 +49,11 @@ class BoxServices extends Component {
                     paddingBottom: '50px',
                     }}>
                     <img className='home-page-box-service-image' src={businessImage} alt="BusinessImage"/>
-                    <span style={{fontSize: '24px', fontWeight: 'bold'}}>BUSINESS<br></br><br></br></span>
-                    <span>Corporations and Organisations<br></br><br></br></span>
+                    <span style={{fontSize: '24px', fontWeight: 'bold'}}>{t("HomeBoxServicesTitleBusiness")}<br></br><br></br></span>
+                    <span>{t("HomeBoxServicesContentBusiness")}<br></br><br></br></span>
                     <Button variant="contained" color='info' style={{marginTop: '30px'}}
                         onClick={() => changePage(3)}>
-                        Learn more
+                        {t("ButtonLearnMore")}
                     </Button>
                 </Box>
             </div>

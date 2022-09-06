@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class BoxServiceInfo extends Component {
     render() {
-        const { image, textContent, textTitle, children } = this.props;
+        const { image, textContent, textTitle, children, heightBox } = this.props;
     return (
         <div className='services-page-box'>
             <Box
@@ -16,7 +16,10 @@ class BoxServiceInfo extends Component {
                     alignItems: 'center'
                 }}
             >
-                <img className='services-page-box-info-image' src={image} alt={textTitle}/>
+                <img className='services-page-box-info-image'  
+                    style={{height: heightBox ? heightBox : '455px'}} 
+                    src={image} alt={textTitle}
+                />
                 <Box sx={{ width: '50%',
                     padding: '50px',
                     textAlign: 'center',
@@ -24,7 +27,7 @@ class BoxServiceInfo extends Component {
                     lineHeight: '1.65em',
                     fontFamily: 'Raleway, sans-serif',
                     }}>
-                    <span style={{fontSize: '22px', color: '#007136', textAlign: 'center'}}>{textTitle}<br></br><br></br></span>
+                    <span style={{fontSize: '22px', color: '#007136'}}>{textTitle}<br></br><br></br></span>
                     <span>{textContent}</span>
                     {children}
                 </Box>

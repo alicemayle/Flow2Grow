@@ -6,7 +6,9 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import logo from '../images/flow2grow_small.png'; 
+import logo from '../images/flow2grow_small.png';
+
+import ChangeLang from './ChangeLang';
 
 class AppBarMenu extends Component {
     render() {
@@ -17,10 +19,10 @@ class AppBarMenu extends Component {
             { title: 'Business', number: 3 },
             { title: 'Contact', number: 4 }
         ];
-        const { changePage } = this.props;
+        const { changePage, t } = this.props;
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar color='info' position='static' style={{width: '100%'}}>
+        <Box sx={{ display: 'flex' }}>
+            <AppBar color='info' style={{width: '100%'}} >
                 <Toolbar>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' />
@@ -30,11 +32,12 @@ class AppBarMenu extends Component {
                                 onClick={() => changePage(page.number)}
                                 sx={{ my: 2, color: '#007136', display: 'block'}}
                             >
-                                {page.title}
+                                {t(page.title)}
                             </Button>
                         ))}
                     </Box>
-                    <IconButton
+                    <ChangeLang t={t} />
+                    {/* <IconButton
                         size="large"
                         aria-label="account of current user"
                         aria-controls="menu-appbar"
@@ -43,9 +46,9 @@ class AppBarMenu extends Component {
                     >
                         <AccountCircle />
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{marginLeft: 10}}>
-                            Log In
+                            {t("LogIn")}
                         </Typography>
-                    </IconButton>
+                    </IconButton> */}
                 </Toolbar>
             </AppBar>
         </Box>
