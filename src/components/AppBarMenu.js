@@ -37,7 +37,7 @@ class AppBarMenu extends Component {
                         ))}
                     </Box>
                     <ChangeLang t={t} />
-                    <IconButton
+                    {/* <IconButton
                         size="large"
                         aria-label="account of current user"
                         aria-controls="menu-appbar"
@@ -48,7 +48,7 @@ class AppBarMenu extends Component {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{marginLeft: 10}}>
                             {t("LogIn")}
                         </Typography>
-                    </IconButton>
+                    </IconButton> */}
                 </Toolbar>
             </AppBar>
         </Box>
