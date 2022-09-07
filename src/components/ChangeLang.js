@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import i18n from "i18next";
-import { FormControl, MenuItem, Select } from "@mui/material";
+import Flag from 'react-flagkit';
+import { Button } from "@mui/material";
 
 export default class ChangeLang extends Component {
   state = {
     lang: "en"
   };
-  langChange = e => {
-    this.setState({ [e.target.name]: e.target.value }, () => {
+  langChange = value => {
+    this.setState({ lang: value }, () => {
       localStorage.setItem("lang", this.state.lang);
       const lang = localStorage.getItem("lang");
       i18n.changeLanguage(lang);
@@ -16,40 +17,20 @@ export default class ChangeLang extends Component {
   render() {
     const { lang } = this.state;
     return (
-      <FormControl sx={{ m: 1, minWidth: 120 }} size='small'>
-        <Select
-          id="demo-simple-select"
-          value={lang}
-          name="lang"
-          onChange={this.langChange}
-        >
-          <MenuItem value={'en'}>English</MenuItem>
-          <MenuItem value={'es'}>Español</MenuItem>
-        </Select>
-      </FormControl>
-    /*<div>
-        <select
-          className="selectBox"
-          onChange={this.langChange}
-          name="lang"
-          value={lang}
-        >
-          <option className="optionsMenu" value="en">
-            English
-          </option>
-          <option className="optionsMenu" value="tm">
-            Tamil(தமிழ்)
-          </option>
-          <option className="optionsMenu" value="tl">
-            Telugu(తెలుగు)
-          </option>
-          <option className="optionsMenu" value="sp">
-            Spanish(española)
-          </option>
-        </select>
-        <p className="textToChange" style={{background: 'red'}}>{t("Hi")}</p>
-        <p className="textToChange">{t("Actions")}</p>
-      </div>*/
+      <div>
+        <Button
+          endIcon={<Flag country="GB" />}
+          onClick={() => this.langChange('en')}
+          style={{backgroundColor: lang === 'en' ? '#F3F3F3' : null}}>
+          EN
+        </Button>
+        <Button 
+          endIcon={<Flag country="MX" />} 
+          onClick={() => this.langChange('es')}
+          style={{backgroundColor: lang === 'eS' ? '#F3F3F3' : null}}>
+          ES
+        </Button>
+      </div>
     );
   }
 }
