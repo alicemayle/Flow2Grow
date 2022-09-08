@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 import BoxServiceInfo from '../Services/BoxServicesInfo';
 import imageBox from '../../images/about-us-page-box-info.jpeg';
 import ForwardIcon from '@mui/icons-material/Forward';
+import Testimonials from './Testimonials';
 
 class AboutUs extends Component {
     render() {
         const { changePage, t } = this.props;
     return (
-        <div className='services-page' style={{padding: '150px'}}>
+        <div className='services-page' style={{padding: '80px', paddingTop: '150px'}}>
             <BoxServiceInfo { ...this.props } 
                 image={imageBox}
                 textTitle={t("AboutUsTitle")}
@@ -41,7 +42,10 @@ class AboutUs extends Component {
                     Testimonials
                 </span>
             </div>
-            <Button variant='contained' size='large' endIcon={<ForwardIcon />} style={{ width: '100%', backgroundColor: '#b9e38c'}}
+            <Testimonials t={t} />
+            <Button variant='contained' size='large' 
+                endIcon={<ForwardIcon />} 
+                style={{ width: '90%', backgroundColor: '#b9e38c'}}
                 onClick={() => changePage(4)}>
                 Click here to set up a meeting
             </Button>
