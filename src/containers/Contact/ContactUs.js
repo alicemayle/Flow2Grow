@@ -2,8 +2,19 @@ import { Box, Button, TextField } from '@mui/material';
 import React, { Component } from 'react';
 
 class ContactUs extends Component {
+    state = {
+        subject: null,
+        message: null
+    }
+    onChange = ({target}) => {
+        this.setState({
+            [target.name]: target.value,
+        })
+    }
     render() {
         const { margin, t } = this.props;
+        const { subject, message } = this.state;
+        var link = 'mailto:alicemr273@gmail.com?body='+message+" &subject="+subject;
     return (
         <div className='home-page-box' style={{padding: 0, paddingTop: '70px'}}>
             <Box
@@ -34,21 +45,28 @@ class ContactUs extends Component {
                         </div>
                     </div>
                     <div>
-                        <TextField id="subject" label={t("ContactUsFormSubject")} variant="standard" fullWidth margin='dense'/>
+                        <TextField name="subject" variant="standard" fullWidth margin='dense'
+                            label={t("ContactUsFormSubject")}
+                            onChange={this.onChange}
+                         />
                     </div>
                     <div>
                         <TextField id="phone" label={t("ContactUsFormPhone")} variant="standard" fullWidth type='number'  margin='dense'/>
                     </div>
                     <div>
                     <TextField
-                        id="mesage" label={t("ContactUsFormMessage")} multiline rows={4}
+                        name="message" label={t("ContactUsFormMessage")} multiline rows={4}
                         placeholder={t("ContactUsFormMessagePlaceholder")}
                         variant="standard"
                         fullWidth
                         margin='dense'
+                        onChange={this.onChange}
                         />
                     </div>
-                    <Button variant="contained" color='primary' style={{marginTop: '30px'}}>{t("ContactUsFormButton")}</Button>
+                    <Button variant="contained" color='primary' style={{marginTop: '30px'}}
+                        href={link}>
+                        {t("ContactUsFormButton")}
+                    </Button>
                 </Box>
                 <div className='box-contact-us-image'></div>
             </Box>

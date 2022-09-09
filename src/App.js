@@ -8,6 +8,7 @@ import Personal from './containers/Services/Personal';
 import Business from './containers/Services/Business';
 import AboutUs from './containers/AboutUs/AboutUs';
 import PrivacyPolicy from './containers/PrivacyPolicy/PrivacyPolicy';
+import ScrollButton from './components/ScrollButton';
 
 class App extends Component {
   state = {
@@ -15,6 +16,10 @@ class App extends Component {
   }
   changePage = (page) => {
     this.setState({ pageSelect: page });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+      });
   }
   render() {
     const {pageSelect} = this.state;
@@ -56,7 +61,8 @@ class App extends Component {
         }
         <Translation>
             { t => <Footer t={t} changePage={ this.changePage }/> }
-          </Translation>
+        </Translation>
+        <ScrollButton />
       </div>
     );
   }
