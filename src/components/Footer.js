@@ -25,11 +25,9 @@ class Footer extends Component {
                         <PhoneIcon />
                     </IconButton>
                 </Tooltip>
-                <Tooltip title="(+52) 55 3101 2794">
-                    <IconButton color="info" aria-label="contact whatsapp">
-                        <WhatsAppIcon />
-                    </IconButton>
-                </Tooltip>
+                <IconButton href='https://wa.me/message/UWDAGXYAIKNFK1' color="info" aria-label="contact whatsapp">
+                    <WhatsAppIcon />
+                </IconButton>
                 <Tooltip title="Info@flow2grow.com">
                     <IconButton href='mailto:info@flow2grow.com' color="info" aria-label="contact email">
                         <EmailIcon />

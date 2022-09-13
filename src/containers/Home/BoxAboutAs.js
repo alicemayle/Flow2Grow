@@ -6,25 +6,9 @@ class BoxAboutUs extends Component {
         const { changePage, t } = this.props;
     return (
         <div className='home-page-box'>
-            <Box
-                sx={{
-                    width: '100%',
-                    backgroundColor: 'primary.main',
-                    flexDirection: 'row',
-                    display: 'flex',
-                    borderRadius: '1.5em'
-                }}
-            >
-                <Box sx={{ width: '50%',
-                    padding: '50px',
-                    textAlign: 'center',
-                    color: 'white',
-                    height: 'auto',
-                    fontSize: '16px',
-                    lineHeight: '1.65em',
-                    fontFamily: 'Raleway, sans-serif'
-                    }}>
-                    <span style={{fontSize: '40px'}}>{t("HomeBoxAboutUsTitle")}<br></br><br></br></span>
+            <Box className='home-page-box-about-us'>
+                <Box className='home-page-box-about-us-content'>
+                    <span className='font-size-title'>{t("HomeBoxAboutUsTitle")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent1")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent2")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent3")}<br></br>
