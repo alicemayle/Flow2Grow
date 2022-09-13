@@ -20,16 +20,14 @@ class Footer extends Component {
                 </Button>
             </div>
             <div className='box-icons-footer'  style={{textAlign: 'right'}}>
-                <Tooltip title="+52 55 6790 6946">
-                    <IconButton href='tel:+52 55 6790 6946' color="info" aria-label="contact phone">
+                <Tooltip title="(+52) 55 3101 2794">
+                    <IconButton href='tel:+52 55 3101 2794' color="info" aria-label="contact phone">
                         <PhoneIcon />
                     </IconButton>
                 </Tooltip>
-                <Tooltip title="+52 55 6790 6946">
-                    <IconButton color="info" aria-label="contact whatsapp">
-                        <WhatsAppIcon />
-                    </IconButton>
-                </Tooltip>
+                <IconButton href='https://wa.me/message/UWDAGXYAIKNFK1' color="info" aria-label="contact whatsapp">
+                    <WhatsAppIcon />
+                </IconButton>
                 <Tooltip title="Info@flow2grow.com">
                     <IconButton href='mailto:info@flow2grow.com' color="info" aria-label="contact email">
                         <EmailIcon />
