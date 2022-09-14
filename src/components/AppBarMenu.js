@@ -38,7 +38,7 @@ class AppBarMenu extends Component {
         <AppBar color='info' style={{width: '100%'}} >
             <Toolbar>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' />
+                <img src={logo} alt="Logo" className='g-m-15 g-mr-8 app-bar-logo' />
                 {pages.map((page) => (
                     <Button
                         key={page.number}

@@ -11,7 +11,7 @@ class Personal extends Component {
     return (
         <div className='services-page'>
             <div className='services-page-title'>
-                <span style={{fontSize: '48px', fontWeight: 'bold', color: '#007136'}}>
+                <span className='services-page-title-text'>
                     {t("PersonalTitle")}
                 </span><br></br><br></br>
                 <span>{t("PersonalSubtitle")}<br></br></span>

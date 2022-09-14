@@ -9,7 +9,7 @@ class AboutUs extends Component {
     render() {
         const { changePage, t } = this.props;
     return (
-        <div className='services-page' style={{padding: '80px', paddingTop: '150px'}}>
+        <div className='services-page about-us-page-box-info'>
             <BoxServiceInfo { ...this.props } 
                 image={imageBox}
                 textTitle={t("AboutUsTitle")}
@@ -37,8 +37,8 @@ class AboutUs extends Component {
                 </span>
                 
             </BoxServiceInfo>
-            <div className='services-page-title'>
-                <span style={{fontSize: '50px', color: '#007136'}}>
+            <div className='services-page-title services-page-title-text'>
+                <span>
                     Testimonials
                 </span>
             </div>

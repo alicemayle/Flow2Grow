@@ -16,26 +16,15 @@ class ContactUs extends Component {
         const { subject, message } = this.state;
         var link = 'mailto:alicemr273@gmail.com?body='+message+" &subject="+subject;
     return (
-        <div className='home-page-box' style={{padding: 0, paddingTop: '70px'}}>
-            <Box
+        <div className='home-page-box contact-us-page'>
+            <Box className='box-contact-us'
                 sx={{
-                    width: '100%',
-                    flexDirection: 'row',
-                    display: 'flex',
-                    backgroundColor: '#e4f3d4',
                     marginY: margin ? margin : 0,
                     marginBottom: margin ? 0 : '70px'
                 }}
             >
-                <Box sx={{ width: '50%',
-                    textAlign: 'center',
-                    height: 'auto',
-                    fontSize: '16px',
-                    lineHeight: '1.65em',
-                    fontFamily: 'Raleway, sans-serif',
-                    padding: '70px',
-                    }}>
-                    <span style={{fontSize: '40px', color: '#007136'}}>{t("ContactUsTitle")}<br></br><br></br></span>
+                <Box className='box-contact-us-content'>
+                    <span className='box-contact-us-content-title'>{t("ContactUsTitle")}<br></br><br></br></span>
                     <div style={{flexDirection: 'row', display: 'flex', width: '100%', alignContent: 'space-between'}}>
                         <div style={{width:'50%', paddingRight: '2%'}}>
                             <TextField id="name" label={t("ContactUsFormName")} variant="standard" margin='dense' fullWidth/>
