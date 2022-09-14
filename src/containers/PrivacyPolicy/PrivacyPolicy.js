@@ -8,7 +8,7 @@ class PrivacyPolicy extends Component {
     return (
         <div className='services-page'>
             <div className='services-page-title'>
-                <span style={{fontSize: '48px', color: '#007136'}}>
+                <span className='services-page-title-text'>
                     {t("PrivacyPolicy")}
                 </span><br></br>
             </div>
