@@ -80,12 +80,14 @@ i18n.use(initReactI18next).init({
         AboutUsContentInfoItem7: "Create opportunities where we see them",
         AboutUsContentInfoItem8: "Constantly learn, innovate and improve where we can",
         AboutUsContentInfoItem9: "Remain humble and open minded at all times",
+        AboutUsTestimonialsTitle: "Testimonials",
         AboutUsContentTestimonial1: "“Absolutely first class service. I highly recommend Flow2Grow for genuine, honest and straight forward advice. Extremely knowledgeable, and most of all, really nice to deal with.”",
         AboutUsContentTestimonial2: "\"I was looking for someone to help me with my finances and investments and was introduced to Simon by good friend of mine. He took his time to understand exactly what my current situation was, and what I was looking to achieve. We came up with a great plan, and I’ve been very happy with the results. I also consider Simon a friend, we have got on well since we first met.\"",
         AboutUsContentTestimonial3: "“Fantastic advise from someone who took the time to understand what I wanted, and then gave me a range of options based on my specific needs. Very professional service from the start which continues to this day.”",
         AboutUsAuthorTestimonial1: "Dr. A. Lopez",
         AboutUsAuthorTestimonial2: "M. Diletti",
         AboutUsAuthorTestimonial3: "C.Camhaji",
+        AboutUsButtonHere: "Click here to set up a meeting"
       }
     },
     es: {
@@ -164,12 +166,14 @@ i18n.use(initReactI18next).init({
         AboutUsContentInfoItem7: "Crear oportunidades donde las veamos.",
         AboutUsContentInfoItem8: "Aprender, innovar y mejorar constantemente.",
         AboutUsContentInfoItem9: "Mantenerse humilde y con mente abierta en todo momento.",
+        AboutUsTestimonialsTitle: "Testimonios",
         AboutUsContentTestimonial3: "\"Un consejo fantástico de alguien que se tomó el tiempo para comprender lo que quería y luego darme una variedad de opciones según mis necesidades específicas. Un servicio muy profesional desde el principio y que continúa hasta hoy en día\".",
         AboutUsContentTestimonial2: "\"Estaba buscando a alguien que me ayudara con mis finanzas e inversiones y un buen amigo mío me presentó a Simon. Se tomó su tiempo para entender exactamente cuál era mi situación actual y lo que estaba buscando lograr. Se nos ocurrió un gran plan y ahora estoy muy contenta con los resultados. También considero a Simon un amigo, nos hemos llevado bien desde el principio\"..",
         AboutUsContentTestimonial1: "\"Absolutamente un servicio de primera clase. Recomiendo encarecidamente a Flow2Grow para obtener consejos genuinos, honestos y directos. Extremadamente informado y, sobre todo, realmente agradable de tratar\".",
         AboutUsAuthorTestimonial1: "Dr. A. Lopez",
         AboutUsAuthorTestimonial2: "M. Diletti",
         AboutUsAuthorTestimonial3: "C.Camhaji",
+        AboutUsButtonHere: "¡Organicemos una reunión!"
       }
     }
   },

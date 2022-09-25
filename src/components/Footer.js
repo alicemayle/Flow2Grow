@@ -15,12 +15,12 @@ class Footer extends Component {
                 </span>
             </div>
             <div className='box-icons-footer display-footer'  style={{textAlign: 'center'}}>
-                <Button variant="text" color='info' onClick={() => changePage(5)}>
+                <Button variant="text" color='info' style={{textTransform: 'none'}} onClick={() => changePage(5)}>
                     {t("PrivacyPolicy")}
                 </Button>
             </div>
             <div className='box-min-footer'  style={{textAlign: 'left'}}>
-                <Button variant="text" color='info' onClick={() => changePage(5)}>
+                <Button variant="text" color='info' style={{textTransform: 'none'}} onClick={() => changePage(5)}>
                     {t("PrivacyPolicy")}
                 </Button>
                 <span>

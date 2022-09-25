@@ -35,12 +35,13 @@ class AppBarMenu extends Component {
         const { changePage, t } = this.props;
         const { anchorElNav } = this.state;
     return (
-        <AppBar color='info' style={{width: '100%'}} >
+        <AppBar color='bar' className='app-bar-menu' >
             <Toolbar>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-between', marginLeft: '100px', marginRight: '130px' } }}>
                 <img src={logo} alt="Logo" className='g-m-15 g-mr-8 app-bar-logo' />
                 {pages.map((page) => (
                     <Button
+                        style={{textTransform: 'none', fontFamily: 'Raleway'}}
                         key={page.number}
                         onClick={() => changePage(page.number)}
                         sx={{ my: 2, color: '#007136', display: 'block'}}

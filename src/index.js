@@ -15,6 +15,7 @@ const theme = createTheme({
     secondary: { main: '#568721', contrastText: '#ffffff' },
     error: { main: '#D32F2F' },
     info: { main: '#ffffff', contrastText: '#007136' },
+    bar: {main: 'rgba(250, 250, 250, 0.9)', contrastText: '#007136'},
     contrastThreshold: 3,
     tonalOffset: 0.2,
   }

@@ -51,7 +51,7 @@ class App extends Component {
         }
         { pageSelect === 4 && 
           <Translation>
-            { t => <ContactUs { ...this.props } t={t}/> }
+            { t => <ContactUs margin={true} { ...this.props } t={t}/> }
           </Translation>
         }
         { pageSelect === 5 && 
