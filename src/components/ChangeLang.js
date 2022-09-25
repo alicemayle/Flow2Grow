@@ -19,12 +19,14 @@ export default class ChangeLang extends Component {
     return (
       <div>
         <Button
+          size="small"
           endIcon={<Flag country="GB" />}
           onClick={() => this.langChange('en')}
           style={{backgroundColor: lang === 'en' ? '#F3F3F3' : null}}>
           EN
         </Button>
         <Button 
+          size="small"
           endIcon={<Flag country="MX" />} 
           onClick={() => this.langChange('es')}
           style={{backgroundColor: lang === 'es' ? '#F3F3F3' : null}}>

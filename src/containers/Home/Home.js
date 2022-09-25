@@ -14,7 +14,7 @@ class Home extends Component {
             </div>
             <BoxAboutUs { ...this.props } />
             <BoxServices { ...this.props }/>
-            <ContactUs margin='70px' { ...this.props }/>
+            <ContactUs margin={false} { ...this.props }/>
         </div>
     );
     }

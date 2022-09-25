@@ -41,7 +41,7 @@ class Business extends Component {
                     <li>{t("BusinessBoxInfoContentEnterpriseItem5")}</li>
                 </ul>
             </BoxServiceInfo>
-            <Button variant="contained" style={{marginBottom: '30px'}}
+            <Button variant="contained" style={{marginBottom: '40px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>
