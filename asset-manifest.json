@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Flow2Grow/static/css/main.8cec3fbd.css",
+    "main.js": "/Flow2Grow/static/js/main.47eba4eb.js",
+    "static/media/jeremy-bishop-tree-home.jpeg": "/Flow2Grow/static/media/jeremy-bishop-tree-home.f677b0c05d385669593a.jpeg",
+    "static/media/about-us-page-box-testimonial-3.webp": "/Flow2Grow/static/media/about-us-page-box-testimonial-3.d1f057f2472de4788c03.webp",
+    "static/media/personal-box-info-investments.jpeg": "/Flow2Grow/static/media/personal-box-info-investments.607bf46c72aacb680340.jpeg",
+    "static/media/about-us-page-box-info.jpeg": "/Flow2Grow/static/media/about-us-page-box-info.6565a67804f6ecbdfc20.jpeg",
+    "static/media/business-page-box-info-investments.jpeg": "/Flow2Grow/static/media/business-page-box-info-investments.1b920066b6e488b630bb.jpeg",
+    "static/media/personal-box-info-other.jpeg": "/Flow2Grow/static/media/personal-box-info-other.f98527035e78a0392c3b.jpeg",
+    "static/media/about-us-page-box-testimonial-2.webp": "/Flow2Grow/static/media/about-us-page-box-testimonial-2.4be1bb92f6442813fbba.webp",
+    "static/media/home-box-services-business.jpg": "/Flow2Grow/static/media/home-box-services-business.7c7434fcb928e8901ac9.jpg",
+    "static/media/flow2grow_small.png": "/Flow2Grow/static/media/flow2grow_small.76c7cce4cd361d2616d8.png",
+    "static/media/about-us-page-box-testimonial-1.webp": "/Flow2Grow/static/media/about-us-page-box-testimonial-1.89beb1fb5c4884f99ee2.webp",
+    "static/media/business-page-box-info-enterprise-support.jpeg": "/Flow2Grow/static/media/business-page-box-info-enterprise-support.09f842f722d7eed9f30e.jpeg",
+    "static/media/box-contact-us.webp": "/Flow2Grow/static/media/box-contact-us.c398cc91ecb3144a2fe6.webp",
+    "static/media/home-box-services-personal.jpg": "/Flow2Grow/static/media/home-box-services-personal.4b42b53f50b7ea641490.jpg",
+    "static/media/Arual.ttf": "/Flow2Grow/static/media/Arual.a29c11e93c3bd2a80adf.ttf",
+    "static/media/personal-box-info-retirement.jpeg": "/Flow2Grow/static/media/personal-box-info-retirement.ff75a1234a59a9e47728.jpeg",
+    "static/media/home-box-about-us.jpeg": "/Flow2Grow/static/media/home-box-about-us.6dadcde76ddf4b05f78f.jpeg",
+    "index.html": "/Flow2Grow/index.html",
+    "main.8cec3fbd.css.map": "/Flow2Grow/static/css/main.8cec3fbd.css.map",
+    "main.47eba4eb.js.map": "/Flow2Grow/static/js/main.47eba4eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cec3fbd.css",
+    "static/js/main.47eba4eb.js"
+  ]
+}
