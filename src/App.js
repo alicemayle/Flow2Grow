@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Translation, withTranslation } from 'react-i18next';
+import { CSSTransition } from 'react-transition-group';
 import AppBarMenu from './components/AppBarMenu';
 import Footer from './components/Footer';
 import Home from './containers/Home/Home';
@@ -9,63 +10,59 @@ import Business from './containers/Services/Business';
 import AboutUs from './containers/AboutUs/AboutUs';
 import PrivacyPolicy from './containers/PrivacyPolicy/PrivacyPolicy';
 import ScrollButton from './components/ScrollButton';
+import './styles.css';
 
-class App extends Component {
-  state = {
-    pageSelect: 0
-  }
-  changePage = (page) => {
-    this.setState({ pageSelect: page });
+function App () {
+  const [pageSelect, setpageSelect] = useState(0);
+
+  const changePage = (page) => {
+    setpageSelect(page);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
       });
   }
-  render() {
-    const {pageSelect} = this.state;
-
     return (
       <div className='init'>
         <Translation>
-          { t => <AppBarMenu { ...this.props } changePage={ this.changePage } t={t}/> }
+          { t => <AppBarMenu changePage={ changePage } t={t}/> }
         </Translation>
-        { pageSelect === 0 && 
+        <CSSTransition key={0} timeout={500} unmountOnExit classNames="item" in={pageSelect === 0}>
           <Translation>
-            { t => <Home { ...this.props } changePage={ this.changePage } t={t}/> }
+            { t => <Home changePage={ changePage } t={t}/> }
           </Translation>
-        }
-        { pageSelect === 1 && 
+        </CSSTransition>
+        <CSSTransition key={1} timeout={500} unmountOnExit classNames="item" in={pageSelect === 1}>
           <Translation>
-            { t => <AboutUs { ...this.props } changePage={ this.changePage } t={t}/> }
+            { t => <AboutUs changePage={ changePage } t={t}/> }
           </Translation> 
-        }
-        { pageSelect === 2 && 
+          </CSSTransition>
+        <CSSTransition key={2} timeout={500} unmountOnExit classNames="item" in={pageSelect === 2}>
           <Translation>
-            { t => <Personal { ...this.props } changePage={ this.changePage } t={t}/> }
+            { t => <Personal changePage={ changePage } t={t}/> }
           </Translation>
-        }
-        { pageSelect === 3 && 
+          </CSSTransition>
+        <CSSTransition key={3} timeout={500} unmountOnExit classNames="item" in={pageSelect === 3}>
           <Translation>
-            { t => <Business { ...this.props } changePage={ this.changePage } t={t}/> }
+            { t => <Business changePage={ changePage } t={t}/> }
           </Translation>
-        }
-        { pageSelect === 4 && 
+          </CSSTransition>
+        <CSSTransition key={4} timeout={500} unmountOnExit classNames="item" in={pageSelect === 4}>
           <Translation>
-            { t => <ContactUs margin={true} { ...this.props } t={t}/> }
+            { t => <ContactUs margin={true} t={t}/> }
           </Translation>
-        }
-        { pageSelect === 5 && 
+          </CSSTransition>
+        <CSSTransition key={5} timeout={800} unmountOnExit classNames="item" in={pageSelect === 5}>
           <Translation>
-            { t => <PrivacyPolicy { ...this.props } changePage={ this.changePage } t={t}/> }
-          </Translation>
-        }
+            { t => <PrivacyPolicy changePage={ changePage } t={t}/> }
+          </Translation> 
+        </CSSTransition>
         <Translation>
-            { t => <Footer t={t} changePage={ this.changePage }/> }
+            { t => <Footer t={t} changePage={ changePage }/> }
         </Translation>
         <ScrollButton />
       </div>
     );
-  }
 }
 
 export default withTranslation()(App);
