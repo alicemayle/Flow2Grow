@@ -24,6 +24,12 @@ class AppBarMenu extends Component {
             anchorElNav: null
         })
       };
+    handleChangePage = (page) => {
+        const { changePage } = this.props;
+
+        this.handleCloseNavMenu();
+        changePage(page);
+    }
     render() {
         const pages = [
             { title: 'Home', number: 0 },
@@ -74,7 +80,7 @@ class AppBarMenu extends Component {
                     sx={{ display: { xs: 'block', md: 'none' }}}
                     >
                     {pages.map((page) => (
-                        <MenuItem key={page.number} onClick={() => changePage(page.number)}>
+                        <MenuItem key={page.number} onClick={() => this.handleChangePage(page.number)}>
                             <Typography textAlign="center">{t(page.title)}</Typography>
                         </MenuItem>
                     ))}
