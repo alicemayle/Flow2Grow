@@ -11,9 +11,9 @@ class BoxAboutUs extends Component {
                     <span className='font-size-title'>{t("HomeBoxAboutUsTitle")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent1")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent2")}<br></br><br></br></span>
-                    <span>{t("HomeBoxAboutUsContent3")}<br></br>
-                    </span>
-                    <Button variant="contained" color='info' style={{marginTop: '30px'}}
+                    <span>{t("HomeBoxAboutUsContent3")}<br></br></span>
+                    <Button variant="contained" color='info' 
+                        style={{marginTop: window.screen.width > 500 ? '44px' : '25px'}}
                         onClick={() => changePage(1)}>
                         {t("ButtonLearnMore")}
                     </Button>

@@ -44,7 +44,7 @@ class AppBarMenu extends Component {
         <AppBar color='bar' className='app-bar-menu' >
             <Toolbar>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-between', marginLeft: '100px', marginRight: '130px' } }}>
-                <img src={logo} alt="Logo" className='g-m-15 g-mr-8 app-bar-logo' />
+                <img src={logo} alt="Logo" className='g-m-15 g-mr-8 app-bar-logo' onClick={() => changePage(0)}/>
                 {pages.map((page) => (
                     <Button
                         style={{textTransform: 'none', fontFamily: 'Raleway'}}
@@ -85,7 +85,7 @@ class AppBarMenu extends Component {
                         </MenuItem>
                     ))}
                 </Menu>
-                <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' />
+                <img src={logo} alt="Logo" height={50} className='g-m-15 g-mr-8' onClick={() => changePage(0)} />
             </Box>
             <ChangeLang t={t} />
                     {/* <IconButton

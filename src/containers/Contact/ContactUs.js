@@ -64,7 +64,7 @@ class ContactUs extends Component {
                         onChange={this.onChange}
                         />
                     </div>
-                    <Button variant="contained" color='primary' style={{marginTop: '30px'}}
+                    <Button variant="contained" color='primary' style={{marginTop: window.screen.width > 500 ? '100px' : '30px'}}
                         href={link}>
                         {t("ContactUsFormButton")}
                     </Button>
