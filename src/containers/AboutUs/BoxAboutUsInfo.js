@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 class BoxAboutUsInfo extends Component {
     render() {
-        const { image, textContent, textTitle, t } = this.props;
+        const { image, textTitle, t } = this.props;
     return (
         <div className='services-page-box about-us-page-box-info'>
             <Box className='services-page-box-content about-us-box-info'>
@@ -11,8 +11,6 @@ class BoxAboutUsInfo extends Component {
                     src={image} alt={textTitle}
                 />
                 <Box className='services-page-box-info-text about-us-box-info-text'>
-                    <span style={{fontSize: '40px', color: '#007136', lineHeight: 'normal'}}>{textTitle}<br></br><br></br></span>
-                    <span style={{fontSize: '18px'}}>{textContent}<br></br><br></br><br></br></span>
                     <span style={{textAlign: 'justify'}}>{t("AboutUsContentInfo1")}</span>
                     <ul style={{textAlign: 'justify'}}>
                         <li>{t("AboutUsContentInfoItem1")}</li>

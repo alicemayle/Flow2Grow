@@ -14,12 +14,12 @@ class ContactUs extends Component {
     render() {
         const { margin, t } = this.props;
         const { subject, message } = this.state;
-        var link = 'mailto:alicemr273@gmail.com?body='+message+" &subject="+subject;
+        var link = 'mailto:info@flow2grow.com?body='+message+" &subject="+subject;
     return (
         <div className='home-page-box contact-us-page'>
             <Box className='box-contact-us'
                 sx={{
-                    marginBottom: margin ? '70px' : 0,
+                    marginTop: margin ? '26px' : 0,
                     backgroundColor: margin ? 'transparent' : '#e4f3d4'
                 }}
             >

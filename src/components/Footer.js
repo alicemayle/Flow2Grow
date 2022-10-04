@@ -19,13 +19,11 @@ class Footer extends Component {
                     {t("PrivacyPolicy")}
                 </Button>
             </div>
-            <div className='box-min-footer'  style={{textAlign: 'left'}}>
-                <Button variant="text" color='info' style={{textTransform: 'none'}} onClick={() => changePage(5)}>
+            <div className='box-min-footer'>
+                <span onClick={() => changePage(5)}>
                     {t("PrivacyPolicy")}
-                </Button>
-                <span>
-                    ©2020 by Flow2Grow.
                 </span>
+                <span> ©2020 by Flow2Grow.</span>
             </div>
             <div className='box-icons-footer'  style={{textAlign: 'right'}}>
                 <Tooltip title="(+52) 55 3101 2794">

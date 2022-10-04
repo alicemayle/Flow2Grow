@@ -31,7 +31,7 @@ class Personal extends Component {
                 textTitle={t("PersonalBoxInfoTitleOther")}
                 textContent={t("PersonalBoxInfoContentOther")}
             />
-            <Button variant="contained" style={{marginBottom: '40px'}}
+            <Button variant="contained" style={{marginBottom: window.screen.width > 500 ? '40px' : '30px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>

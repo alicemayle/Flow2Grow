@@ -449,7 +449,7 @@ input[type='number']::-webkit-outer-spin-button {
 	display: flex;
 	align-items: center;
 	align-content: center;
-	padding-top: 70px;
+	padding-top: 96px;
 	font-size: 16px;
 }
 .services-page-title {
@@ -461,7 +461,7 @@ input[type='number']::-webkit-outer-spin-button {
 	margin: 70px;
 }
 .services-page-title-text {
-	font-size: 48px; 
+	font-size: 40px; 
 	font-weight: bold; 
 	color: #007136;
 }
@@ -509,7 +509,10 @@ input[type='number']::-webkit-outer-spin-button {
 .about-us-page-box-info {
 	padding-left: 21%;
 	padding-right: 21%;
-	padding-top: 120px;
+	margin-bottom: 0;
+}
+.about-us-page-testimonials-title {
+	margin: 50px;
 }
 .about-us-page-tesmonials {
 	width: 65%;
@@ -521,7 +524,7 @@ input[type='number']::-webkit-outer-spin-button {
 	height: auto;
 	padding: 50px;
 	padding-top: 70px;
-	font-size: 14px;
+	padding-bottom: 70px;
 }
 .about-us-box-image {
 	object-fit: contain;
@@ -614,7 +617,7 @@ input[type='number']::-webkit-outer-spin-button {
 	.about-us-page-box-info {
 		padding-left: 16%;
 		padding-right: 16%;
-		padding-top: 100px;
+		margin-bottom: 0;
 	}
 	.about-us-box-info-text {
 		padding: 30px;
@@ -648,12 +651,12 @@ input[type='number']::-webkit-outer-spin-button {
 		height: auto;
 	}
 	.services-page-box-info-text {
-		padding: 10px;
+		padding: 30px;
 	}
 	.about-us-page-box-info {
 		padding-left: 10%;
 		padding-right: 10%;
-		padding-top: 70px;
+		margin-bottom: 0;
 	}
 	.about-us-box-info-text {
 		padding: 20px;
@@ -730,7 +733,7 @@ input[type='number']::-webkit-outer-spin-button {
 	}
 	.contact-us-page {
 		padding: 0;
-		padding-top: 30px;
+		padding-top: 70px;
 	}
 	.box-contact-us-image {
 		display: none;
@@ -748,13 +751,16 @@ input[type='number']::-webkit-outer-spin-button {
 	.services-page {
 		font-size: 14px;
 	}
+	.services-page-title {
+		margin: 40px;
+	}
 	.services-page-title-text {
 		font-size: 30px;
 	}
 	.services-page-box {
 		padding-left: 25px;
 		padding-right: 25px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 	.services-page-box-content {
 		flex-direction: column;
@@ -771,15 +777,14 @@ input[type='number']::-webkit-outer-spin-button {
 	}
 	.services-page-box-info-text {
 		width: 100%;
-		padding: 20px;
 		font-size: 14px;
 		border-top-right-radius: 0;
 		border-bottom-left-radius: 1.5em;
 	}
 	.about-us-page-box-info {
-		padding-top: 80px;
 		padding-left: 20px;
 		padding-right: 20px;
+		margin-bottom: 0;
 	}
 	.about-us-box-info-text {
 		padding: 20px;
@@ -802,7 +807,7 @@ input[type='number']::-webkit-outer-spin-button {
 	}
 	.scroll-button {
 		left: 85%;
-		bottom: 30px;
+		bottom: 40px;
 		font-size: 3rem;
 	}
 	.footer {
@@ -816,8 +821,8 @@ input[type='number']::-webkit-outer-spin-button {
 	.box-min-footer {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 10px;
-		font-size: 11px;
+		font-size: 12px;
+		margin-left: 10px;
 	}
 	.privacy-policy-content {
 		padding: 30px;

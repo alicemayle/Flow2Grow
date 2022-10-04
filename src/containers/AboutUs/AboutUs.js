@@ -10,19 +10,25 @@ class AboutUs extends Component {
         const { changePage, t } = this.props;
     return (
         <div className='services-page'>
+            <div className='services-page-title'>
+                <span className='services-page-title-text'>
+                    {t("AboutUsTitle")}
+                </span><br></br><br></br>
+                <span>{t("AboutUsContent")}<br></br></span>
+            </div>
             <BoxAboutUsInfo { ...this.props } 
                 image={imageBox}
                 textTitle={t("AboutUsTitle")}
                 textContent={t("AboutUsContent")}
             />
-            <div className='services-page-title services-page-title-text'>
+            <div className='services-page-title services-page-title-text about-us-page-testimonials-title'>
                 <span>{t("AboutUsTestimonialsTitle")}</span>
             </div>
             <Testimonials t={t} />
             <div  className='about-us-button-here-large'>
                 <Button variant='contained' size='large'
                     endIcon={<ForwardIcon style={{fontSize:'50px'}}/>} 
-                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '40px', 
+                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '55px',
                         fontSize: '36px', textTransform: 'none', fontFamily: 'Raleway'}}
                     onClick={() => changePage(4)}>
                     {t("AboutUsButtonHere")}
@@ -31,7 +37,7 @@ class AboutUs extends Component {
             <div className='about-us-button-here-small'>
                 <Button variant='contained' size='small'
                     endIcon={<ForwardIcon style={{fontSize:'35px'}}/>} 
-                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '40px', 
+                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '55px', 
                         fontSize: '25px', textTransform: 'none', fontFamily: 'Raleway'}}
                     onClick={() => changePage(4)}>
                     {t("AboutUsButtonHere")}

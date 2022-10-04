@@ -10,7 +10,7 @@ class Business extends Component {
     return (
         <div className='services-page'>
             <div className='services-page-title'>
-                <span style={{fontSize: '48px', fontWeight: 'bold', color: '#007136'}}>
+                <span  className='services-page-title-text'>
                     {t("BusinessTitle")}
                 </span><br></br><br></br>
                 <span>{t("BusinessSubtitle")}<br></br></span>
@@ -41,7 +41,7 @@ class Business extends Component {
                     <li>{t("BusinessBoxInfoContentEnterpriseItem5")}</li>
                 </ul>
             </BoxServiceInfo>
-            <Button variant="contained" style={{marginBottom: '40px'}}
+            <Button variant="contained" style={{marginBottom: window.screen.width > 500 ? '40px' : '30px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>
