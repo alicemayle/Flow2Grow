@@ -15,13 +15,14 @@ class ContactUs extends Component {
         const { margin, t } = this.props;
         const { subject, message } = this.state;
         const fontSize = window.screen.width > 500 ? 16 : 14;
+        const marginTop = window.screen.width > 500 ? '70px' : '30px';
 
         var link = 'mailto:info@flow2grow.com?body='+message+" &subject="+subject;
     return (
         <div className='home-page-box contact-us-page'>
             <Box className='box-contact-us'
                 sx={{
-                    marginTop: margin ? '26px' : 0,
+                    marginTop: margin ? '96px' : marginTop,
                     backgroundColor: margin ? 'transparent' : '#e4f3d4'
                 }}
             >
