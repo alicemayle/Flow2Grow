@@ -13,7 +13,7 @@ class PrivacyPolicy extends Component {
                 </span><br></br>
             </div>
             <BoxPrivacyPolicyInfo { ...this.props } />
-            <Button variant="contained" style={{marginBottom: '40px'}}
+            <Button variant="contained" style={{marginBottom: window.screen.width > 500 ? '40px' : '30px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>

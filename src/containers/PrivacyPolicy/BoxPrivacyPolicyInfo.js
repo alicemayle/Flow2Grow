@@ -19,7 +19,7 @@ class BoxPrivacyPolicyInfo extends Component {
                 <span>{t("PrivacyPolicyBoxInfoContent2")}<br></br><br></br></span>
                 <span className='privacy-policy-subtitle'>{t("PrivacyPolicyBoxInfoContent3")}<br></br><br></br></span>
                 <span>{t("PrivacyPolicyBoxInfoContent4")}<br></br><br></br></span>
-                <span>{t("PrivacyPolicyBoxInfoContent5")}<br></br><br></br></span>
+                <span>{t("PrivacyPolicyBoxInfoContent5")}<br></br></span>
             </Box>
         </div>
     );

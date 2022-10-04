@@ -14,6 +14,8 @@ class ContactUs extends Component {
     render() {
         const { margin, t } = this.props;
         const { subject, message } = this.state;
+        const fontSize = window.screen.width > 500 ? 16 : 14;
+
         var link = 'mailto:info@flow2grow.com?body='+message+" &subject="+subject;
     return (
         <div className='home-page-box contact-us-page'>
@@ -28,18 +30,21 @@ class ContactUs extends Component {
                     <div style={{flexDirection: 'row', display: 'flex', width: '100%', alignContent: 'space-between'}}>
                         <div style={{width:'50%', paddingRight: '2%'}}>
                             <TextField id="name" label={t("ContactUsFormName")} variant="standard" margin='dense' fullWidth 
-                                inputProps={{style: {fontFamily: 'Raleway', fontSize: 15}}} InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: 15}}}
+                                inputProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}} 
+                                InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}}
                             />
                         </div>
                         <div style={{width:'50%', paddingLeft: '2%'}}>
                             <TextField id="email" label={t("ContactUsFormEmail")} variant="standard" required  margin='dense' type='email' fullWidth 
-                                inputProps={{style: {fontFamily: 'Raleway', fontSize: 15}}} InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: 15}}}
+                                inputProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}} 
+                                InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}}
                             />
                         </div>
                     </div>
                     <div>
                         <TextField name="subject" variant="standard" fullWidth margin='dense' 
-                            inputProps={{style: {fontFamily: 'Raleway', fontSize: 15}}} InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: 15}}}
+                            inputProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}} 
+                            InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}}
                             label={t("ContactUsFormSubject")}
                             onChange={this.onChange}
                          />
@@ -48,7 +53,8 @@ class ContactUs extends Component {
                         margin &&
                         <div>
                             <TextField id="phone" label={t("ContactUsFormPhone")} variant="standard" fullWidth type='number'  margin='dense'
-                                inputProps={{style: {fontFamily: 'Raleway', fontSize: 15}}} InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: 15}}}
+                                inputProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}} 
+                                InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}}
                             />
                         </div>
                     }
@@ -56,7 +62,8 @@ class ContactUs extends Component {
                     <div>
                     <TextField
                         name="message" label={t("ContactUsFormMessage")} multiline rows={4}
-                        inputProps={{style: {fontFamily: 'Raleway', fontSize: 15}}} InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: 15}}}
+                        inputProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}} 
+                        InputLabelProps={{style: {fontFamily: 'Raleway', fontSize: fontSize}}}
                         placeholder={t("ContactUsFormMessagePlaceholder")}
                         variant="standard"
                         fullWidth

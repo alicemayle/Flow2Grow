@@ -12,7 +12,7 @@ class BoxServiceInfo extends Component {
                 />
                 <Box className='services-page-box-info-text'>
                     <span style={{fontSize: '22px', color: '#007136'}}>{textTitle}<br></br><br></br></span>
-                    <span>{textContent}</span>
+                    <span style={{textAlign: children ? 'justify' : 'center'}}>{textContent}</span>
                     {children}
                 </Box>
             </Box>
