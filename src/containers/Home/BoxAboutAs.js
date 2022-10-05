@@ -13,7 +13,7 @@ class BoxAboutUs extends Component {
                     <span>{t("HomeBoxAboutUsContent2")}<br></br><br></br></span>
                     <span>{t("HomeBoxAboutUsContent3")}<br></br></span>
                     <Button variant="contained" color='info' 
-                        style={{marginTop: window.screen.width > 500 ? '44px' : '25px'}}
+                        style={{marginTop: window.screen.width > 650 ? '44px' : '25px'}}
                         onClick={() => changePage(1)}>
                         {t("ButtonLearnMore")}
                     </Button>

@@ -12,8 +12,10 @@ class Business extends Component {
             <div className='services-page-title'>
                 <span  className='services-page-title-text'>
                     {t("BusinessTitle")}
-                </span><br></br><br></br>
-                <span>{t("BusinessSubtitle")}<br></br></span>
+                </span>
+                <div className='service-page-title-spacing'>
+                    <span>{t("BusinessSubtitle")}</span>
+                </div>
             </div>
             <BoxServiceInfo { ...this.props } 
                 image={investments}
@@ -41,7 +43,7 @@ class Business extends Component {
                     <li>{t("BusinessBoxInfoContentEnterpriseItem5")}</li>
                 </ul>
             </BoxServiceInfo>
-            <Button variant="contained" style={{marginBottom: window.screen.width > 500 ? '40px' : '30px'}}
+            <Button variant="contained" style={{marginBottom: window.screen.width > 650 ? '40px' : '30px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>

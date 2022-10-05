@@ -13,8 +13,10 @@ class AboutUs extends Component {
             <div className='services-page-title'>
                 <span className='services-page-title-text'>
                     {t("AboutUsTitle")}
-                </span><br></br><br></br>
-                <span>{t("AboutUsContent")}<br></br></span>
+                </span>
+                <div className='service-page-title-spacing'>
+                    <span>{t("AboutUsContent")}</span>
+                </div>
             </div>
             <BoxAboutUsInfo { ...this.props } 
                 image={imageBox}
@@ -36,7 +38,6 @@ class AboutUs extends Component {
             </div>
             <div className='about-us-button-here-small'>
                 <Button variant='contained' size='small'
-                    endIcon={<ForwardIcon style={{fontSize:'35px'}}/>} 
                     style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '55px', 
                         fontSize: '25px', textTransform: 'none', fontFamily: 'Raleway'}}
                     onClick={() => changePage(4)}>

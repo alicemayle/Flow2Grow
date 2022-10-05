@@ -14,8 +14,8 @@ class ContactUs extends Component {
     render() {
         const { margin, t } = this.props;
         const { subject, message } = this.state;
-        const fontSize = window.screen.width > 500 ? 16 : 14;
-        const marginTop = window.screen.width > 500 ? '70px' : '30px';
+        const fontSize = window.screen.width > 650 ? 16 : 14;
+        const marginTop = window.screen.width > 650 ? '70px' : '30px';
 
         var link = 'mailto:info@flow2grow.com?body='+message+" &subject="+subject;
     return (
@@ -72,7 +72,7 @@ class ContactUs extends Component {
                         onChange={this.onChange}
                         />
                     </div>
-                    <Button variant="contained" color='primary' style={{marginTop: window.screen.width > 500 ? '100px' : '30px'}}
+                    <Button variant="contained" color='primary' style={{marginTop: window.screen.width > 650 ? '100px' : '30px'}}
                         href={link}>
                         {t("ContactUsFormButton")}
                     </Button>

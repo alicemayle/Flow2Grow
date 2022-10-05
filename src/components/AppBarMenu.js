@@ -9,10 +9,10 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import logo from '../images/flow2grow_small.png';
 import ChangeLang from './ChangeLang';
 import { Menu, MenuItem, Toolbar } from '@mui/material';
-
 class AppBarMenu extends Component {
     state = {
-        anchorElNav: null
+        anchorElNav: null,
+        pageSelected: 0
     }
     handleOpenNavMenu = (event) => {
         this.setState({
@@ -26,10 +26,13 @@ class AppBarMenu extends Component {
       };
     handleChangePage = (page) => {
         const { changePage } = this.props;
+        this.setState({
+            pageSelected: page
+        });
 
         this.handleCloseNavMenu();
         changePage(page);
-    }
+    };
     render() {
         const pages = [
             { title: 'Home', number: 0 },
@@ -39,7 +42,7 @@ class AppBarMenu extends Component {
             { title: 'Contact', number: 4 }
         ];
         const { changePage, t } = this.props;
-        const { anchorElNav } = this.state;
+        const { anchorElNav, pageSelected } = this.state;
     return (
         <AppBar color='bar' className='app-bar-menu' >
             <Toolbar>
@@ -47,10 +50,10 @@ class AppBarMenu extends Component {
                 <img src={logo} alt="Logo" className='g-m-15 g-mr-8 app-bar-logo' onClick={() => changePage(0)}/>
                 {pages.map((page) => (
                     <Button
-                        style={{textTransform: 'none', fontFamily: 'Raleway'}}
+                        style={{fontFamily: 'Raleway'}}
                         key={page.number}
                         onClick={() => changePage(page.number)}
-                        sx={{ my: 2, color: '#007136', display: 'block'}}
+                        sx={{ my: 2, display: 'block' }}
                         >
                         {t(page.title)}
                     </Button>
@@ -80,8 +83,10 @@ class AppBarMenu extends Component {
                     sx={{ display: { xs: 'block', md: 'none' }}}
                     >
                     {pages.map((page) => (
-                        <MenuItem key={page.number} onClick={() => this.handleChangePage(page.number)}>
-                            <Typography textAlign="center">{t(page.title)}</Typography>
+                        <MenuItem key={page.number}
+                            selected={page.number === pageSelected}
+                            onClick={() => this.handleChangePage(page.number)}>
+                            <Typography textAlign="center" fontFamily={'Raleway'}>{t(page.title)}</Typography>
                         </MenuItem>
                     ))}
                 </Menu>

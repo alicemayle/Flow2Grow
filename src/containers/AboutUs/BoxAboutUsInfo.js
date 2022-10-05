@@ -18,7 +18,6 @@ class BoxAboutUsInfo extends Component {
                         <li>{t("AboutUsContentInfoItem3")}</li>
                         <li>{t("AboutUsContentInfoItem4")}</li>
                     </ul>
-                    <br></br>
                     <span style={{textAlign: 'justify'}}>{t("AboutUsContentInfo2")}<br></br><br></br></span>
                     <span style={{textAlign: 'justify'}}>{t("AboutUsContentInfo3")}</span>
                     <ul style={{textAlign: 'justify'}}>

@@ -13,8 +13,10 @@ class Personal extends Component {
             <div className='services-page-title'>
                 <span className='services-page-title-text'>
                     {t("PersonalTitle")}
-                </span><br></br><br></br>
-                <span>{t("PersonalSubtitle")}<br></br></span>
+                </span>
+                <div className='service-page-title-spacing'>
+                    <span>{t("PersonalSubtitle")}</span>
+                </div>
             </div>
             <BoxServiceInfo { ...this.props } 
                 image={investments}
@@ -31,7 +33,7 @@ class Personal extends Component {
                 textTitle={t("PersonalBoxInfoTitleOther")}
                 textContent={t("PersonalBoxInfoContentOther")}
             />
-            <Button variant="contained" style={{marginBottom: window.screen.width > 500 ? '40px' : '30px'}}
+            <Button variant="contained" style={{marginBottom: window.screen.width > 650 ? '40px' : '30px'}}
                 onClick={() => changePage(4)}>
                 {t("ButtonContactUs")}
             </Button>
