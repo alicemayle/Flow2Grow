@@ -18,17 +18,17 @@ class Personal extends Component {
                     <span>{t("PersonalSubtitle")}</span>
                 </div>
             </div>
-            <BoxServiceInfo { ...this.props } 
+            <BoxServiceInfo
                 image={investments}
                 textTitle={t("PersonalBoxInfoTitleInvestments")}
                 textContent={t("PersonalBoxInfoContentInvestments")}
             />
-            <BoxServiceInfo { ...this.props } 
+            <BoxServiceInfo
                 image={retirement}
                 textTitle={t("PersonalBoxInfoTitleRetirement")}
                 textContent={t("PersonalBoxInfoContentRetirement")}
             />
-            <BoxServiceInfo { ...this.props } 
+            <BoxServiceInfo
                 image={other}
                 textTitle={t("PersonalBoxInfoTitleOther")}
                 textContent={t("PersonalBoxInfoContentOther")}
