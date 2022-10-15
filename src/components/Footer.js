@@ -26,8 +26,8 @@ class Footer extends Component {
                 <span> ©2020 by Flow2Grow.</span>
             </div>
             <div className='box-icons-footer'  style={{textAlign: 'right'}}>
-                <Tooltip title="(+52) 55 3101 2794">
-                    <IconButton href='tel:+52 55 3101 2794' color="info" aria-label="contact phone">
+                <Tooltip title="(+52) 55 6790 6946">
+                    <IconButton href='tel:+52 55 6790 6946' color="info" aria-label="contact phone">
                         <PhoneIcon />
                     </IconButton>
                 </Tooltip>
