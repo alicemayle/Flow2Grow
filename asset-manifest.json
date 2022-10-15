@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Flow2Grow/static/css/main.2255801d.css",
-    "main.js": "/Flow2Grow/static/js/main.a4491c31.js",
+    "main.js": "/Flow2Grow/static/js/main.a2ff6c32.js",
     "static/media/jeremy-bishop-tree-home.jpeg": "/Flow2Grow/static/media/jeremy-bishop-tree-home.f677b0c05d385669593a.jpeg",
     "static/media/about-us-page-box-testimonial-3.webp": "/Flow2Grow/static/media/about-us-page-box-testimonial-3.d1f057f2472de4788c03.webp",
     "static/media/personal-box-info-investments.jpeg": "/Flow2Grow/static/media/personal-box-info-investments.607bf46c72aacb680340.jpeg",
@@ -20,10 +20,10 @@
     "static/media/home-box-about-us.jpeg": "/Flow2Grow/static/media/home-box-about-us.6dadcde76ddf4b05f78f.jpeg",
     "index.html": "/Flow2Grow/index.html",
     "main.2255801d.css.map": "/Flow2Grow/static/css/main.2255801d.css.map",
-    "main.a4491c31.js.map": "/Flow2Grow/static/js/main.a4491c31.js.map"
+    "main.a2ff6c32.js.map": "/Flow2Grow/static/js/main.a2ff6c32.js.map"
   },
   "entrypoints": [
     "static/css/main.2255801d.css",
-    "static/js/main.a4491c31.js"
+    "static/js/main.a2ff6c32.js"
   ]
 }
