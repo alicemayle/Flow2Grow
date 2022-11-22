@@ -11,11 +11,11 @@ const theme = createTheme({
   },
   palette: {
     mode: 'light',
-    primary: { main: '#007136', contrastText: '#ffffff' },
-    secondary: { main: '#568721', contrastText: '#ffffff' },
-    error: { main: '#D32F2F' },
-    info: { main: '#ffffff', contrastText: '#007136' },
-    bar: {main: 'rgba(250, 250, 250, 0.9)', contrastText: '#007136'},
+    primary: { main: '#273E34', contrastText: '#ffffff' },
+    secondary: { main: '#607F5C', contrastText: '#ffffff' },
+    error: { main: '#AF4141' },
+    info: { main: '#ffffff', contrastText: '#273E34' },
+    bar: {main: '#A9C3A7', contrastText: '#273E34'},
     contrastThreshold: 3,
     tonalOffset: 0.2,
   }

@@ -11,7 +11,7 @@ class BoxServiceInfo extends Component {
                     src={image} alt={textTitle}
                 />
                 <Box className='services-page-box-info-text'>
-                    <span style={{fontSize: '22px', color: '#007136'}}>{textTitle}<br></br><br></br></span>
+                    <span style={{fontSize: '22px', color: '#273E34'}}>{textTitle}<br></br><br></br></span>
                     <span style={{textAlign: children ? 'justify' : 'center'}}>{textContent}</span>
                     {children}
                 </Box>

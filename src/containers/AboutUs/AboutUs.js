@@ -30,16 +30,16 @@ class AboutUs extends Component {
             <div  className='about-us-button-here-large'>
                 <Button variant='contained' size='large'
                     endIcon={<ForwardIcon style={{fontSize:'50px'}}/>} 
-                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '55px',
-                        fontSize: '36px', textTransform: 'none', fontFamily: 'Raleway'}}
+                    style={{ width: '90%', backgroundColor: '#607F5C', marginBottom: '55px',
+                        fontSize: '36px', textTransform: 'none', fontFamily: 'Montserrat'}}
                     onClick={() => changePage(4)}>
                     {t("AboutUsButtonHere")}
                 </Button>
             </div>
             <div className='about-us-button-here-small'>
                 <Button variant='contained' size='small'
-                    style={{ width: '90%', backgroundColor: '#b9e38c', marginBottom: '55px', 
-                        fontSize: '25px', textTransform: 'none', fontFamily: 'Raleway'}}
+                    style={{ width: '90%', backgroundColor: '#607F5C', marginBottom: '55px', 
+                        fontSize: '25px', textTransform: 'none', fontFamily: 'Montserrat'}}
                     onClick={() => changePage(4)}>
                     {t("AboutUsButtonHere")}
                 </Button>

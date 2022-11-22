@@ -53,7 +53,7 @@ class AppBarMenu extends Component {
                 <img src={logo} alt="Logo" className='g-ml-15 g-mb-15 g-mr-8 app-bar-logo' onClick={() => changePage(0)}/>
                 {pages.map((page) => (
                     <Button
-                        style={{fontFamily: 'Raleway'}}
+                        style={{fontFamily: 'Montserrat', color:'#607F5C', fontWeight: 'bold'}}
                         key={page.number}
                         onClick={() => changePage(page.number)}
                         sx={{ my: 2, display: 'block' }}
@@ -89,7 +89,7 @@ class AppBarMenu extends Component {
                         <MenuItem key={page.number}
                             selected={page.number === pageSelected}
                             onClick={() => this.handleChangePage(page.number)}>
-                            <Typography textAlign="center" fontFamily={'Raleway'}>{t(page.title)}</Typography>
+                            <Typography textAlign="center" fontFamily={'Montserrat'}>{t(page.title)}</Typography>
                         </MenuItem>
                     ))}
                 </Menu>
