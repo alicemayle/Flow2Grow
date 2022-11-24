@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import logo from '../images/flow2grow_small.png';
+import logo from '../images/f2g_logo_750px.png';
 import ChangeLang from './ChangeLang';
 import { Menu, MenuItem, Toolbar } from '@mui/material';
 class AppBarMenu extends Component {
@@ -47,10 +47,10 @@ class AppBarMenu extends Component {
         <AppBar color='bar' className='app-bar-menu' >
             <Toolbar>
             <Box 
-                sx={{ flexGrow: 1,
+                sx={{ flexGrow: 1, height: '68px',
                     display: { xs: 'none', md: 'flex', justifyContent: 'space-between', marginRight: '100px' } 
                 }}>
-                <img src={logo} alt="Logo" className='g-ml-15 g-mb-15 g-mr-8 app-bar-logo' onClick={() => changePage(0)}/>
+                <img src={logo} alt="Logo" className='g-ml-15 g-mr-8 app-bar-logo' onClick={() => changePage(0)}/>
                 {pages.map((page) => (
                     <Button
                         style={{fontFamily: 'Montserrat', color:'#607F5C', fontWeight: 'bold'}}
