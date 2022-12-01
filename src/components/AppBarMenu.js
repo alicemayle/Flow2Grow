@@ -93,7 +93,7 @@ class AppBarMenu extends Component {
                         </MenuItem>
                     ))}
                 </Menu>
-                <img src={logo} alt="Logo" height={40} onClick={() => changePage(0)} />
+                <img src={logo} alt="Logo" className='app-bar-logo' height={40} onClick={() => changePage(0)} />
             </Box>
             <ChangeLang t={t} />
                     {/* <IconButton

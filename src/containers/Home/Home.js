@@ -4,6 +4,7 @@ import BoxAboutUs from './BoxAboutAs';
 import BoxServices from './BoxServices';
 import ContactUs from '../Contact/ContactUs';
 import '../../styles.css';
+import logo from '../../images/Logo Blanco F2G.png';
 
 function Home ({changePage, t }) {
     return (
@@ -13,8 +14,8 @@ function Home ({changePage, t }) {
                       <Parallax speed={-200} className='parallax'>
                           <div className='ratio'>
                               <div className='inner'>
-                                  <Parallax speed={30} className="box">
-                                  <span className='home-page-title-font'>Flow2Grow</span>
+                                  <Parallax speed={15} className="box">
+                                  <img src={logo} alt="LogoHome" className='home-page-title-logo'/>
                                   </Parallax>
                               </div>
                           </div>
